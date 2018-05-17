@@ -23,5 +23,6 @@ def login(username,password,oncaptcha):
     print(resp)
     return resp 
 
+#直接実行された場合のみ実行し、それ以外の場合は実行しない
 if __name__ == "__main__":
     login('email','password',get_captcha)
